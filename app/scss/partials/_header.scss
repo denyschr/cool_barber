@@ -1,0 +1,82 @@
+.header{
+	min-height: var(--header-height);
+	display: flex;
+	align-items: center;
+	@include tablet{
+		min-height: var(--header-adaptive-height);
+	}
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 0;
+	}
+	&__info{
+		display: flex;
+		column-gap: 42px;
+		@include tablet{
+			display: none;
+		}
+	}
+	&__info-item{
+		position: relative;
+		padding: 0 51px 0 0;
+		&::after{
+			content: '';
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 36px;
+			height: 36px;
+		}
+	}
+	&__address{
+		max-width: 145px;
+		border: none;
+		background-color: transparent;
+		color: var(--pearl);
+		text-align: right;
+		font-size: 14px;
+		line-height: 1.35;
+		cursor: pointer;
+		transition: color .2s ease-in-out;
+		&::after{
+			background-image: url('../images/svg/map.svg');
+		}
+		@include for-desktop{
+			&:hover{
+				color: var(--orange);
+			}
+		}
+	}
+	&__link{
+		display: flex;
+		flex-direction: column;
+		text-align: right;
+		&::after{
+			background-image: url('../images/svg/phone.svg');
+		}
+		@include for-desktop{
+			&:hover .header__link-value{
+				color: var(--orange);
+			}
+		}
+	}
+	&__link-value{
+		color: var(--white);
+		text-align: right;
+		font-size: 18px;
+		line-height: 1.52;
+		transition: color .2s ease-in-out;
+	}
+	&__link-caption{
+		display: inline-block;
+		color: var(--pearl);
+		font-size: 14px;
+		line-height: 1.35;
+	}
+}

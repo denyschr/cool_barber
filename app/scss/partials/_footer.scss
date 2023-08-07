@@ -1,0 +1,13 @@
+.footer{
+	padding: 56px 0;
+	background-color: var(--brown);
+	@include tablet{
+		padding: 35px 0;
+	}
+	&__copy{
+		@extend %mr-regular;
+		color: var(--white);
+		font-size: 12px;
+		line-height: 1.34;
+	}
+}

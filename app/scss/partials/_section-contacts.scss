@@ -1,0 +1,10 @@
+.section-contacts{
+	margin: 0 !important;
+	&__wrap{
+		padding: 60px 0;
+		@include small-tablet{
+			padding: 0;
+			padding-bottom: 40px;
+		}
+	}
+}

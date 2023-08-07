@@ -1,0 +1,17 @@
+@mixin menu {
+	position: fixed;
+	z-index: 90;
+	left: 0;
+	top: var(--header-adaptive-height);
+	transform: translateX(100%);
+	overflow: auto;
+	width: 100%;
+	height: calc(100vh - var(--header-adaptive-height));
+	padding: 40px 50px 50px;
+	background-color: var(--silk);
+	transition: transform .4s ease-in-out;
+
+	&--active{
+		transform: none;
+	}
+}

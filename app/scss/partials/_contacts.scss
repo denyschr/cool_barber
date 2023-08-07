@@ -1,0 +1,109 @@
+.contacts{
+	position: relative;
+	margin-bottom: -50px;
+	@include small-tablet{
+		position: static;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	&__wrap{
+		padding: 135px 0;
+		@include small-tablet{
+			padding: 40px 0;
+		}
+	}
+	&__content{
+		position: relative;
+		z-index: 10;
+		max-width: 480px;
+		padding: 65px 38px 80px 57px;
+		border-radius: 5px;
+		background: linear-gradient(0deg, #251D1A 0%, #251D1A 100%);
+		@include tablet{
+			max-width: 430px;
+			padding: 50px 38px 70px 48px;
+		}
+		@include small-tablet{
+			max-width: 100%;
+			margin: 0 auto;
+		}
+		@include mobile{
+			padding: 50px 20px 50px 35px;
+		}
+		@include small-mobile{
+			padding: 35px 20px 40px 25px;
+		}
+	}
+	&__title{
+		margin: 0 0 50px !important;
+	}
+	&__column{
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		row-gap: 52px;
+		@include small-mobile{
+			row-gap: 35px;
+		}
+	}
+	&__text{
+		@extend %mr-regular;
+		position: relative;
+		display: inline-block;
+		padding-left: 85px;
+		color: var(--white);
+		font-size: 21px;
+		line-height: 1.43;
+		&::before{
+			content: '';
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 54px;
+			height: 54px;
+			@include small-mobile{
+				width: 40px;
+				height: 40px;
+			}
+		}
+		@include tablet{
+			font-size: 18px;
+		}
+		@include small-tablet{
+			font-size: 21px;
+		}
+		@include mobile{
+			padding-left: 70px;
+			font-size: 16px;
+		}
+		@include small-mobile{
+			padding-left: 55px;
+		}
+	}
+	&__phone, &__mail{
+		transition: color .2s ease-in-out;
+		@include for-desktop{
+			&:hover{
+				color: var(--orange);
+			}
+		}
+	}
+	&__phone::before{
+		background-image: url('../images/svg/phone.svg');
+	}
+
+	&__mail::before{
+		background-image: url('../images/svg/mail.svg');
+	}
+
+	&__address::before{
+		background-image: url('../images/svg/map.svg');
+	}
+
+	&__time::before{
+		background-image: url('../images/svg/time.svg');
+	}
+}

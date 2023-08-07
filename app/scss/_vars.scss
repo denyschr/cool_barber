@@ -1,0 +1,58 @@
+%fs-regular{
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+}
+
+%fs-medium{
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
+}
+
+%fs-semibold{
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 600;
+}
+
+%fs-bold{
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 700;
+}
+
+%mr-regular{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+%ir-regular{
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+}
+
+%pd-bold{
+	font-family: 'Playfair Display', sans-serif;
+	font-weight: 700;
+}
+
+%pd-black{
+	font-family: 'Playfair Display', sans-serif;
+	font-weight: 800;
+}
+
+:root{
+		/*Base*/
+		--content-width: 1180px;
+		--container-offset: 15px;
+		--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+		--header-height: 120px;
+		--header-adaptive-height: 80px;
+		--box-width: 580px;
+	
+		/*Colors*/
+		--white: #fff;
+		--black: #000;
+		--taupe: #3B322D;
+		--brown: #251D1A;
+		--pearl: #EFE7E2;
+		--orange: #FF6E40;
+		--silk: #B7AAA2;
+}

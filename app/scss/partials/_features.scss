@@ -1,0 +1,47 @@
+.features{
+	background-color: var(--brown);
+	&__list{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: center;
+		column-gap: 140px;
+		padding: 350px 0 120px !important;
+		@include small-desktop{
+			gap: 50px;
+		}
+		@include small-tablet{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	&__item{
+		padding-top: 102px;
+		background-repeat: no-repeat;
+		background-size: 78px 78px;
+		background-position: top center;
+		&:nth-child(1){
+			background-image: url('../images/svg/barbershop.svg');
+		}
+		&:nth-child(2){
+			background-image: url('../images/svg/barber1.svg');
+		}
+		&:nth-child(3){
+			background-image: url('../images/svg/barber2.svg');
+		}
+	}
+	&__title{
+		@extend %fs-semibold;
+		margin: 0 0 10px;
+		color: var(--pearl);
+		font-size: 24px;
+		line-height: 1.35;
+		@include tablet{
+			font-size: 20px;
+		}
+	}
+	&__descr{
+		margin: 0;
+		color: var(--silk);
+		font-size: 16px;
+		line-height: 1.5;
+	}
+}

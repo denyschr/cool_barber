@@ -1,0 +1,79 @@
+.form{
+	padding: 70px 150px;
+	background-color: var(--orange);
+	@include tablet{
+		padding: 70px 70px;
+	}
+	@include mobile{
+		padding: 40px;
+	}
+	&__box{
+		margin-bottom: 35px;
+	}
+	&__title{
+		@extend %pd-black;
+		margin: 0 0 12px;
+		color: var(--black);
+		font-size: 36px;
+		line-height: 1.33;
+		@include mobile{
+			font-size: 26px;
+		}
+		@include small-mobile{
+			font-size: 20px;
+		}
+	}
+	&__subtitle{
+		margin: 0;
+		color: var(--taupe);
+		font-size: 21px;
+		line-height: 1.43;
+		@include mobile{
+			font-size: 18px;
+		}
+		@include small-mobile{
+			font-size: 16px;
+		}
+	}
+	&__content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		margin-bottom: 25px;
+		@include tablet{
+			flex-direction: column;
+			flex-wrap: nowrap;
+		}
+	}
+	&__input{
+		max-width: 323px;
+		width: 100%;
+		padding: 23px 20px 22px;
+		background-color: transparent;
+		border: 1px solid var(--black);
+		outline: none;
+		transition: border .1s ease-in-out;
+		&:focus{
+				border: 1px solid var(--white);
+		}
+		@include mobile{
+			padding: 20px;
+		}
+		@include small-mobile{
+			max-width: 100%;
+			padding: 16px;
+		}
+	}
+	&__input, &__input::placeholder{
+		@extend %fs-regular;
+		color: var(--white);
+		font-size: 17px;
+		line-height: 1.35;
+	}
+	&__button{
+		background-color: var(--black) !important;
+		cursor: pointer;
+	}
+}
