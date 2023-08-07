@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cool Barber</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div class="overlay">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a class="logo header__logo" href="index.html">
+						<picture>
+							<source srcset="images/svg/mobile-logo.svg" media="(max-width: 399.98px)">
+							<source srcset="images/svg/desktop-logo.svg" media="(max-width: 1023.98px)">
+							<source srcset="images/svg/mobile-logo.svg" media="(max-width: 1200px)">
+							<img src="images/svg/desktop-logo.svg" alt="Our company logo">
+						</picture>
+					</a>
+					<nav class="nav" title="Main menu">
+						<ul class="nav__list list-reset">
+							<li class="nav__item"><a class="nav__link" href="#">About Us</a></li>
+							<li class="nav__item"><a class="nav__link" href="masters.html">Our masters</a></li>
+							<li class="nav__item"><a class="nav__link" href="#">Portfolio</a></li>
+							<li class="nav__item"><a class="nav__link" href="#">Testimonials</a></li>
+							<li class="nav__item"><a class="nav__link" href="contacts.html">Contacts</a></li>
+						</ul>
+					</nav>
+					<div class="header__info">
+						<button class="header__address header__info-item" type="button">302 W 50th St, &nbsp;NY, NY 10019</button>
+						<a class="header__link header__info-item" href="tel:8800000-00-00">
+							<span class="header__link-value">8 (800) 000-00-00</span>
+							<span class="header__link-caption">Daily from 9 to 20</span>
+						</a>
+					</div>
+					<button class="burger" aria-label="Open menu" aria-expanded="false">
+						<span class="burger__line"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+<main class="main">
+	<section class="contacts">
+		<iframe class="map"
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.6577318555228!2d-73.98731214715109!3d40.76212131611889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25856f01ffd3d%3A0x3648ae33fc011045!2s302%20W%2050th%20St%2C%20New%20York%2C%20NY%2010019%2C%20USA!5e0!3m2!1sen!2sua!4v1691322304321!5m2!1sen!2sua"
+			allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<div class="container">
+			<div class="contacts__wrap">
+				<div class="contacts__content contacts__content">
+					<h2 class="contacts__title contacts__title title">Contacts</h2>
+					<div class="contacts__column contacts__column">
+						<a class="contacts__link contacts__text contacts__phone" href="tel:8800000-00-00">8 (800)
+							000-00-00</a>
+						<a class="contacts__link contacts__text contacts__mail"
+							href="mailto:info@sitename.com">info@coolbarber.com</a>
+						<span class="contacts__address contacts__text contacts__address">302 W 50th St, NY, NY 10019</span>
+						<span class="contacts__time contacts__text contacts__time">Daily from 9 to 20</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="appointment">
+		<div class="container">
+			<div class="appointment__inner">
+				<form class="form text-center" action="#">
+					<div class="form__box">
+						<h2 class="form__title">Get in consultation with our expert barbers</h2>
+						<p class="form__subtitle">Expand Call-to-Action Details</p>
+					</div>
+					<div class="form__content">
+						<input class="form__input" type="tel" placeholder="+1 (_ _ _) _ _ _-_ _-_ _">
+						<input class="form__input" type="email" placeholder="Email">
+						<button class="form__button button" type="submit">Book now</button>
+					</div>
+					<label class="custom-checkbox">
+						<input type="checkbox" class="custom-checkbox__input">
+						<span class="custom-checkbox__text">
+							By clicking on the button, you agree to the <a class="custom-checkbox__link" href="#">terms of processing
+								personal data</a>
+						</span>
+					</label>
+				</form>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<div class="container text-center">
+		<span class="footer__copy">© All rights reserved</span>
+	</div>
+</footer>
+</div>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
