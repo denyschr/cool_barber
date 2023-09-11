@@ -1,4 +1,4 @@
-# [Multipage website](https://dchornoivanenko.github.io/cool_barber/) for a barbershop in New York
+# [Multipage website](https://denyschr.github.io/cool_barber/) for a barbershop in New York
 ## What I used for creating the website:
 - HTML
 - CSS
